@@ -25,6 +25,8 @@
     flex-direction: column;
     align-items: left;
     justify-content: center;
+    background-color: #808080; /* grey */
+    color: white;
 }
 
 #footer{
