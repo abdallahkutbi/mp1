@@ -3,8 +3,9 @@
     margin: 0 auto;
 }
 
-#nav{
+#layout{
     width: 30%;
+    flex-box: 1;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -17,15 +18,6 @@
     align-items: left;
     justify-content: left;
     background-color: #033599;
-    color: white;
-}
-
-#main{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    background-color: #808080; /* grey */
     color: white;
 }
 
