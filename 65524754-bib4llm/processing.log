@@ -1,0 +1,8 @@
+2025-07-07 14:32:35,937 - DEBUG - bib4llm.cli - Running command: /Users/abdullahkutbi/Documents/Boston Uni/Senior/Summer1/392/mp1/venv/bin/bib4llm convert /Users/abdullahkutbi/Documents/Boston Uni/Senior/Summer1/392/mp1/65524754.pdf
+2025-07-07 14:32:35,944 - INFO - bib4llm.process_bibliography - Initialized BibliographyProcessor for /Users/abdullahkutbi/Documents/Boston Uni/Senior/Summer1/392/mp1/65524754.pdf
+2025-07-07 14:32:35,944 - INFO - bib4llm.process_bibliography - Output directory: /Users/abdullahkutbi/Documents/Boston Uni/Senior/Summer1/392/mp1/65524754-bib4llm
+2025-07-07 14:32:35,944 - DEBUG - bib4llm.process_bibliography - Database initialized successfully
+2025-07-07 14:32:35,944 - INFO - bib4llm.process_bibliography - Processing PDF: /Users/abdullahkutbi/Documents/Boston Uni/Senior/Summer1/392/mp1/65524754.pdf with key: 65524754
+2025-07-07 14:32:35,955 - DEBUG - bib4llm.process_bibliography - Created symbolic link for processing: /Users/abdullahkutbi/Documents/Boston Uni/Senior/Summer1/392/mp1/65524754-bib4llm/65524754/65524754.pdf -> /Users/abdullahkutbi/Documents/Boston Uni/Senior/Summer1/392/mp1/65524754.pdf
+2025-07-07 14:32:37,012 - INFO - bib4llm.process_bibliography - Successfully processed PDF: /Users/abdullahkutbi/Documents/Boston Uni/Senior/Summer1/392/mp1/65524754.pdf
+2025-07-07 14:32:37,012 - INFO - bib4llm.process_bibliography - Successfully processed PDF: /Users/abdullahkutbi/Documents/Boston Uni/Senior/Summer1/392/mp1/65524754.pdf

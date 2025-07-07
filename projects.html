@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Abdallah</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="page-wrapper">
+    <!-- Header -->
+    <header>
+      <h1>Abdallah</h1>
+      <p>Projects & Portfolio</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="credits.html">Credits</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+      <div id="projects">
+        <h2>SepiaAI — Autonomous Strategy Agent</h2>
+        <p><strong>Stack:</strong> Java · Sepia API · Docker</p>
+        <ul>
+          <li>Path-planned with Dijkstra to gather resources efficiently</li>
+          <li>Adaptive AI shifts tactics based on live enemy patrols</li>
+        </ul>
+      </div>
+
+      <div id="projects">
+        <h2>Tetris AI Agent</h2>
+        <p><strong>Stack:</strong> Java · Reinforcement Learning</p>
+        <ul>
+          <li>Engineered a Q-learning policy that clears lines 8× faster</li>
+          <li>Custom reward shaping encourages T-spins and combos</li>
+        </ul>
+      </div>
+
+      <!-- Calculator Section -->
+      <div id="calculator">
+        <h2>Multifunction Calculator</h2>
+        <div id="calc-container">
+          <div id="calc-row">
+            <input id="num1" type="number" placeholder="First #" />
+            <input id="num2" type="number" placeholder="Second #" />
+          </div>
+
+          <div id="calc-row">
+            <button onclick="addition()">+</button>
+            <button onclick="subtraction()">−</button>
+            <button onclick="multiplication()">*</button>
+            <button onclick="division()">/</button>
+            <button onclick="power()">^</button>
+            <button onclick="clearCalc()">Clear</button>
+          </div>
+
+          <h3 id="result"></h3>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Abdallah. <a href="credits.html">Credits</a></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> 
