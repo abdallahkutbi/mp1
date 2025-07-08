@@ -1,17 +1,65 @@
 #page-wrapper{
     width: 80vw;
     margin: 0 auto;
+    background-color: #033599;
+    color: white;
 }
 
 #layout{
-    width: 30%;
     display: flex;
     flex-direction: row;
     align-items: left;
     justify-content: center;
 }
 
-#header{
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px;
+}
+
+nav{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    background-color: #808080; 
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+nav button {
+    margin: 10px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 70%;
+    height: 70%;
+}
+
+main{
+    height: 100vh;
+    background-color: #808080; 
+    color: white;
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}   
+
+header{
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -20,12 +68,62 @@
     color: white;
 }
 
-#footer{
+footer{
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    background-color: #033599;
-    color: white;
 }
 
+@media screen and (max-width: 750px) {
+    nav {
+      width: 100%;
+      flex-direction: row;
+    }
+  
+    header, main, footer {
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    main {
+      width: 100%;
+    }
+  }
+  
+
+  #calc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  #calc-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  #calc-container input,
+  #calc-container button {
+    padding: 10px;
+    font-size: calc(12px + 0.5vw);
+    border-radius: 5px;
+    border: none;
+  }
+  
+  #result {
+    font-size: calc(14px + 0.8vw);
+  }
+  

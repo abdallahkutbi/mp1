@@ -1,65 +1,54 @@
-// Calculator functions for the multifunction calculator
-function addition() {
-    const num1 = parseFloat(document.getElementById('num1').value);
-    const num2 = parseFloat(document.getElementById('num2').value);
-    const result = num1 + num2;
-    displayResult(result);
-}
-
-function subtraction() {
-    const num1 = parseFloat(document.getElementById('num1').value);
-    const num2 = parseFloat(document.getElementById('num2').value);
-    const result = num1 - num2;
-    displayResult(result);
-}
-
-function multiplication() {
-    const num1 = parseFloat(document.getElementById('num1').value);
-    const num2 = parseFloat(document.getElementById('num2').value);
-    const result = num1 * num2;
-    displayResult(result);
-}
-
-function division() {
-    const num1 = parseFloat(document.getElementById('num1').value);
-    const num2 = parseFloat(document.getElementById('num2').value);
-    if (num2 === 0) {
-        document.getElementById('result').innerHTML = 'Error: Division by zero';
-        document.getElementById('result').id = '';
-    } else {
-        const result = num1 / num2;
-        displayResult(result);
-    }
-}
-
-function power() {
-    const num1 = parseFloat(document.getElementById('num1').value);
-    const num2 = parseFloat(document.getElementById('num2').value);
-    
-    // Using for loop as required (not Math.pow())
-    let result = 1;
-    for (let i = 0; i < num2; i++) {
-        result *= num1;
-    }
-    
-    displayResult(result);
-}
-
-function clearCalc() {
-    document.getElementById('num1').value = '';
-    document.getElementById('num2').value = '';
-    document.getElementById('result').innerHTML = '';
-    document.getElementById('result').id = '';
-}
-
-function displayResult(result) {
-    const resultElement = document.getElementById('result');
-    resultElement.innerHTML = `Result: ${result}`;
-    
-    // Apply red color for negative results
+// Calculator Functions
+function getValues() {
+    const num1 = parseFloat(document.getElementById("num1").value);
+    const num2 = parseFloat(document.getElementById("num2").value);
+    return [num1, num2];
+  }
+  
+  function displayResult(result) {
+    const output = document.getElementById("result");
+    output.innerHTML = String(result);
     if (result < 0) {
-        resultElement.id = 'negative';
+      output.style.color = "red";
     } else {
-        resultElement.id = 'result';
+      output.style.color = "white";
     }
-}
+  }
+  
+  function addition() {
+    const [a, b] = getValues();
+    displayResult(a + b);
+  }
+  
+  function subtraction() {
+    const [a, b] = getValues();
+    displayResult(a - b);
+  }
+  
+  function multiplication() {
+    const [a, b] = getValues();
+    displayResult(a * b);
+  }
+  
+  function division() {
+    const [a, b] = getValues();
+    displayResult(b !== 0 ? a / b : "Error: Divide by 0");
+  }
+  
+  function power() {
+    const [base, exponent] = getValues();
+    let result = 1;
+    for (let i = 0; i < exponent; i++) {
+      result *= base;
+    }
+    displayResult(result);
+  }
+  
+  function clearCalc() {
+    document.getElementById("num1").value = "";
+    document.getElementById("num2").value = "";
+    const output = document.getElementById("result");
+    output.innerHTML = "";
+    output.style.color = "white";
+  }
+  
